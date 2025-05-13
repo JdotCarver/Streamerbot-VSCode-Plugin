@@ -128,13 +128,13 @@
   "public void TriggerEvent(string eventName, bool useArgs)": {
     "prefix": "CPH.TriggerEvent",
     "body": [
-      "CPH.TriggerEvent(${1:string eventName}, ${2:bool useArgs = True});"
+      "CPH.TriggerEvent(${1:string eventName}, ${2:bool useArgs = true});"
     ]
   },
   "public void TriggerCodeEvent(string eventName, bool useArgs)": {
     "prefix": "CPH.TriggerCodeEvent",
     "body": [
-      "CPH.TriggerCodeEvent(${1:string eventName}, ${2:bool useArgs = True});"
+      "CPH.TriggerCodeEvent(${1:string eventName}, ${2:bool useArgs = true});"
     ]
   },
   "public void TriggerCodeEvent(string eventName, Dictionary<string,object> args)": {
@@ -416,7 +416,7 @@
   "public int AddQuoteForTwitch(string userId, string quote, bool captureGame)": {
     "prefix": "CPH.AddQuoteForTwitch",
     "body": [
-      "CPH.AddQuoteForTwitch(${1:string userId}, ${2:string quote}, ${3:bool captureGame = False});"
+      "CPH.AddQuoteForTwitch(${1:string userId}, ${2:string quote}, ${3:bool captureGame = false});"
     ]
   },
   "public int AddQuoteForYouTube(string userId, string quote)": {
@@ -476,7 +476,7 @@
   "public void AddToCredits(string section, string value, bool json)": {
     "prefix": "CPH.AddToCredits",
     "body": [
-      "CPH.AddToCredits(${1:string section}, ${2:string value}, ${3:bool json = True});"
+      "CPH.AddToCredits(${1:string section}, ${2:string value}, ${3:bool json = true});"
     ]
   },
   "public void ResetCredits()": {
@@ -506,13 +506,13 @@
   "public void ResumeActionQueue(string name, bool clear)": {
     "prefix": "CPH.ResumeActionQueue",
     "body": [
-      "CPH.ResumeActionQueue(${1:string name}, ${2:bool clear = False});"
+      "CPH.ResumeActionQueue(${1:string name}, ${2:bool clear = false});"
     ]
   },
   "public void ResumeAllActionQueues(bool clear)": {
     "prefix": "CPH.ResumeAllActionQueues",
     "body": [
-      "CPH.ResumeAllActionQueues(${1:bool clear = False});"
+      "CPH.ResumeAllActionQueues(${1:bool clear = false});"
     ]
   },
   "public void ResetFirstWords()": {
@@ -584,25 +584,25 @@
   "public void TwitchSubscriberOnly(bool enabled)": {
     "prefix": "CPH.TwitchSubscriberOnly",
     "body": [
-      "CPH.TwitchSubscriberOnly(${1:bool enabled = True});"
+      "CPH.TwitchSubscriberOnly(${1:bool enabled = true});"
     ]
   },
   "public void TwitchEmoteOnly(bool enabled)": {
     "prefix": "CPH.TwitchEmoteOnly",
     "body": [
-      "CPH.TwitchEmoteOnly(${1:bool enabled = True});"
+      "CPH.TwitchEmoteOnly(${1:bool enabled = true});"
     ]
   },
   "public void TwitchSlowMode(bool enabled, int duration)": {
     "prefix": "CPH.TwitchSlowMode",
     "body": [
-      "CPH.TwitchSlowMode(${1:bool enabled = True}, ${2:int duration = 0});"
+      "CPH.TwitchSlowMode(${1:bool enabled = true}, ${2:int duration = 0});"
     ]
   },
   "public void TwitchFollowMode(bool enabled, int duration)": {
     "prefix": "CPH.TwitchFollowMode",
     "body": [
-      "CPH.TwitchFollowMode(${1:bool enabled = True}, ${2:int duration = 0});"
+      "CPH.TwitchFollowMode(${1:bool enabled = true}, ${2:int duration = 0});"
     ]
   },
   "public string TwitchPredictionCreate(string title, string firstOption, string secondOption, int duration)": {
@@ -644,7 +644,7 @@
   "public void TwitchAnnounce(string message, bool bot, string color)": {
     "prefix": "CPH.TwitchAnnounce",
     "body": [
-      "CPH.TwitchAnnounce(${1:string message}, ${2:bool bot = False}, ${3:string color = null});"
+      "CPH.TwitchAnnounce(${1:string message}, ${2:bool bot = false}, ${3:string color = null});"
     ]
   },
   "public bool TwitchStartRaidById(string userId)": {
@@ -776,7 +776,7 @@
   "public int TtsSpeak(string voiceAlias, string message, bool badWordFilter)": {
     "prefix": "CPH.TtsSpeak",
     "body": [
-      "CPH.TtsSpeak(${1:string voiceAlias}, ${2:string message}, ${3:bool badWordFilter = False});"
+      "CPH.TtsSpeak(${1:string voiceAlias}, ${2:string message}, ${3:bool badWordFilter = false});"
     ]
   },
   "public void KeyboardPress(string keyPress)": {
@@ -788,7 +788,7 @@
   "public void SendYouTubeMessage(string message, bool bot)": {
     "prefix": "CPH.SendYouTubeMessage",
     "body": [
-      "CPH.SendYouTubeMessage(${1:string message}, ${2:bool bot = True});"
+      "CPH.SendYouTubeMessage(${1:string message}, ${2:bool bot = true});"
     ]
   },
   "public void VoiceModSelectVoice(string voiceId)": {
@@ -884,7 +884,7 @@
   "public bool DiscordPostTextToWebhook(string webhookUrl, string content, string username, string avatarUrl, bool textToSpeech)": {
     "prefix": "CPH.DiscordPostTextToWebhook",
     "body": [
-      "CPH.DiscordPostTextToWebhook(${1:string webhookUrl}, ${2:string content}, ${3:string username = null}, ${4:string avatarUrl = null}, ${5:bool textToSpeech = False});"
+      "CPH.DiscordPostTextToWebhook(${1:string webhookUrl}, ${2:string content}, ${3:string username = null}, ${4:string avatarUrl = null}, ${5:bool textToSpeech = false});"
     ]
   },
   "public void StreamDeckSetBackgroundColor(string buttonId, string color)": {
@@ -1250,175 +1250,175 @@
   "public T GetGlobalVar<T>(string varName, bool persisted)": {
     "prefix": "CPH.GetGlobalVar",
     "body": [
-      "CPH.GetGlobalVar(${1:string varName}, ${2:bool persisted = True});"
+      "CPH.GetGlobalVar(${1:string varName}, ${2:bool persisted = true});"
     ]
   },
   "public List<Streamer.bot.Plugin.Interface.Model.GlobalVariableValue> GetGlobalVarValues(bool persisted)": {
     "prefix": "CPH.GetGlobalVarValues",
     "body": [
-      "CPH.GetGlobalVarValues(${1:bool persisted = True});"
+      "CPH.GetGlobalVarValues(${1:bool persisted = true});"
     ]
   },
   "public void SetGlobalVar(string varName, object value, bool persisted)": {
     "prefix": "CPH.SetGlobalVar",
     "body": [
-      "CPH.SetGlobalVar(${1:string varName}, ${2:object value}, ${3:bool persisted = True});"
+      "CPH.SetGlobalVar(${1:string varName}, ${2:object value}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetGlobalVar(string varName, bool persisted)": {
     "prefix": "CPH.UnsetGlobalVar",
     "body": [
-      "CPH.UnsetGlobalVar(${1:string varName}, ${2:bool persisted = True});"
+      "CPH.UnsetGlobalVar(${1:string varName}, ${2:bool persisted = true});"
     ]
   },
   "public T GetUserVar<T>(string userName, string varName, bool persisted)": {
     "prefix": "CPH.GetUserVar",
     "body": [
-      "CPH.GetUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.GetUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public List<UserVariableValue<T>> GetTwitchUsersVar<T>(string varName, bool persisted)": {
     "prefix": "CPH.GetTwitchUsersVar",
     "body": [
-      "CPH.GetTwitchUsersVar(${1:string varName}, ${2:bool persisted = True});"
+      "CPH.GetTwitchUsersVar(${1:string varName}, ${2:bool persisted = true});"
     ]
   },
   "public List<UserVariableValue<T>> GetYouTubeUsersVar<T>(string varName, bool persisted)": {
     "prefix": "CPH.GetYouTubeUsersVar",
     "body": [
-      "CPH.GetYouTubeUsersVar(${1:string varName}, ${2:bool persisted = True});"
+      "CPH.GetYouTubeUsersVar(${1:string varName}, ${2:bool persisted = true});"
     ]
   },
   "public T GetTwitchUserVarById<T>(string userId, string varName, bool persisted)": {
     "prefix": "CPH.GetTwitchUserVarById",
     "body": [
-      "CPH.GetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.GetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public T GetYouTubeUserVarById<T>(string userId, string varName, bool persisted)": {
     "prefix": "CPH.GetYouTubeUserVarById",
     "body": [
-      "CPH.GetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.GetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public T GetTwitchUserVar<T>(string userName, string varName, bool persisted)": {
     "prefix": "CPH.GetTwitchUserVar",
     "body": [
-      "CPH.GetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.GetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public T GetYouTubeUserVar<T>(string userName, string varName, bool persisted)": {
     "prefix": "CPH.GetYouTubeUserVar",
     "body": [
-      "CPH.GetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.GetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void SetUserVar(string userName, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetUserVar",
     "body": [
-      "CPH.SetUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetTwitchUserVarById(string userId, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetTwitchUserVarById",
     "body": [
-      "CPH.SetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetYouTubeUserVarById(string userId, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetYouTubeUserVarById",
     "body": [
-      "CPH.SetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetTwitchUsersVarById(List<string> userIds, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetTwitchUsersVarById",
     "body": [
-      "CPH.SetTwitchUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetTwitchUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetYouTubeUsersVarById(List<string> userIds, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetYouTubeUsersVarById",
     "body": [
-      "CPH.SetYouTubeUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetYouTubeUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetTwitchUserVar(string userName, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetTwitchUserVar",
     "body": [
-      "CPH.SetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void SetYouTubeUserVar(string userName, string varName, object value, bool persisted)": {
     "prefix": "CPH.SetYouTubeUserVar",
     "body": [
-      "CPH.SetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = True});"
+      "CPH.SetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
     ]
   },
   "public void UnsetUserVar(string userName, string varName, bool persisted)": {
     "prefix": "CPH.UnsetUserVar",
     "body": [
-      "CPH.UnsetUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.UnsetUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetTwitchUserVarById(string userId, string varName, bool persisted)": {
     "prefix": "CPH.UnsetTwitchUserVarById",
     "body": [
-      "CPH.UnsetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.UnsetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetYouTubeUserVarById(string userId, string varName, bool persisted)": {
     "prefix": "CPH.UnsetYouTubeUserVarById",
     "body": [
-      "CPH.UnsetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.UnsetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetTwitchUserVar(string userName, string varName, bool persisted)": {
     "prefix": "CPH.UnsetTwitchUserVar",
     "body": [
-      "CPH.UnsetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.UnsetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetYouTubeUserVar(string userName, string varName, bool persisted)": {
     "prefix": "CPH.UnsetYouTubeUserVar",
     "body": [
-      "CPH.UnsetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = True});"
+      "CPH.UnsetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "public void UnsetUser(string userName, bool persisted)": {
     "prefix": "CPH.UnsetUser",
     "body": [
-      "CPH.UnsetUser(${1:string userName}, ${2:bool persisted = True});"
+      "CPH.UnsetUser(${1:string userName}, ${2:bool persisted = true});"
     ]
   },
   "public void UnsetTwitchUserById(string userId, bool persisted)": {
     "prefix": "CPH.UnsetTwitchUserById",
     "body": [
-      "CPH.UnsetTwitchUserById(${1:string userId}, ${2:bool persisted = True});"
+      "CPH.UnsetTwitchUserById(${1:string userId}, ${2:bool persisted = true});"
     ]
   },
   "public void UnsetYouTubeUserById(string userId, bool persisted)": {
     "prefix": "CPH.UnsetYouTubeUserById",
     "body": [
-      "CPH.UnsetYouTubeUserById(${1:string userId}, ${2:bool persisted = True});"
+      "CPH.UnsetYouTubeUserById(${1:string userId}, ${2:bool persisted = true});"
     ]
   },
   "public void UnsetTwitchUser(string userName, bool persisted)": {
     "prefix": "CPH.UnsetTwitchUser",
     "body": [
-      "CPH.UnsetTwitchUser(${1:string userName}, ${2:bool persisted = True});"
+      "CPH.UnsetTwitchUser(${1:string userName}, ${2:bool persisted = true});"
     ]
   },
   "public void UnsetYouTubeUser(string userName, bool persisted)": {
     "prefix": "CPH.UnsetYouTubeUser",
     "body": [
-      "CPH.UnsetYouTubeUser(${1:string userName}, ${2:bool persisted = True});"
+      "CPH.UnsetYouTubeUser(${1:string userName}, ${2:bool persisted = true});"
     ]
   },
   "public void UnsetAllUsersVar(string varName, bool persisted)": {
     "prefix": "CPH.UnsetAllUsersVar",
     "body": [
-      "CPH.UnsetAllUsersVar(${1:string varName}, ${2:bool persisted = True});"
+      "CPH.UnsetAllUsersVar(${1:string varName}, ${2:bool persisted = true});"
     ]
   },
   "public void DisableReward(string rewardId)": {
@@ -1448,13 +1448,13 @@
   "public void UpdateRewardCost(string rewardId, int cost, bool additive)": {
     "prefix": "CPH.UpdateRewardCost",
     "body": [
-      "CPH.UpdateRewardCost(${1:string rewardId}, ${2:int cost}, ${3:bool additive = False});"
+      "CPH.UpdateRewardCost(${1:string rewardId}, ${2:int cost}, ${3:bool additive = false});"
     ]
   },
   "public void UpdateRewardCooldown(string rewardId, long cooldown, bool additive)": {
     "prefix": "CPH.UpdateRewardCooldown",
     "body": [
-      "CPH.UpdateRewardCooldown(${1:string rewardId}, ${2:long cooldown}, ${3:bool additive = False});"
+      "CPH.UpdateRewardCooldown(${1:string rewardId}, ${2:long cooldown}, ${3:bool additive = false});"
     ]
   },
   "public bool UpdateRewardTitle(string rewardId, string title)": {
@@ -1580,13 +1580,13 @@
   "public void PlaySound(string fileName, System.Single volume, bool finishBeforeContinuing)": {
     "prefix": "CPH.PlaySound",
     "body": [
-      "CPH.PlaySound(${1:string fileName}, ${2:System.Single volume = 1}, ${3:bool finishBeforeContinuing = False});"
+      "CPH.PlaySound(${1:string fileName}, ${2:System.Single volume = 1}, ${3:bool finishBeforeContinuing = false});"
     ]
   },
   "public void PlaySoundFromFolder(string path, System.Single volume, bool recursive, bool finishBeforeContinuing)": {
     "prefix": "CPH.PlaySoundFromFolder",
     "body": [
-      "CPH.PlaySoundFromFolder(${1:string path}, ${2:System.Single volume = 1}, ${3:bool recursive = False}, ${4:bool finishBeforeContinuing = False});"
+      "CPH.PlaySoundFromFolder(${1:string path}, ${2:System.Single volume = 1}, ${3:bool recursive = false}, ${4:bool finishBeforeContinuing = false});"
     ]
   },
   "public int BroadcastUdp(int port, object data)": {
@@ -1868,7 +1868,7 @@
   "public string ObsSendBatchRaw(string data, bool haltOnFailure, int executionType, int connection)": {
     "prefix": "CPH.ObsSendBatchRaw",
     "body": [
-      "CPH.ObsSendBatchRaw(${1:string data}, ${2:bool haltOnFailure = False}, ${3:int executionType = 0}, ${4:int connection = 0});"
+      "CPH.ObsSendBatchRaw(${1:string data}, ${2:bool haltOnFailure = false}, ${3:int executionType = 0}, ${4:int connection = 0});"
     ]
   },
   "public void ObsSetMediaState(string scene, string source, int state, int connection)": {
@@ -2084,25 +2084,25 @@
   "public void SendMessage(string message, bool bot)": {
     "prefix": "CPH.SendMessage",
     "body": [
-      "CPH.SendMessage(${1:string message}, ${2:bool bot = True});"
+      "CPH.SendMessage(${1:string message}, ${2:bool bot = true});"
     ]
   },
   "public void TwitchReplyToMessage(string message, string replyId, bool bot)": {
     "prefix": "CPH.TwitchReplyToMessage",
     "body": [
-      "CPH.TwitchReplyToMessage(${1:string message}, ${2:string replyId}, ${3:bool bot = True});"
+      "CPH.TwitchReplyToMessage(${1:string message}, ${2:string replyId}, ${3:bool bot = true});"
     ]
   },
   "public void SendAction(string action, bool bot)": {
     "prefix": "CPH.SendAction",
     "body": [
-      "CPH.SendAction(${1:string action}, ${2:bool bot = True});"
+      "CPH.SendAction(${1:string action}, ${2:bool bot = true});"
     ]
   },
   "public bool SendWhisper(string userName, string message, bool bot)": {
     "prefix": "CPH.SendWhisper",
     "body": [
-      "CPH.SendWhisper(${1:string userName}, ${2:string message}, ${3:bool bot = True});"
+      "CPH.SendWhisper(${1:string userName}, ${2:string message}, ${3:bool bot = true});"
     ]
   },
   "public List<Twitch.Common.Models.Api.ClipData> GetAllClips()": {
@@ -2336,43 +2336,43 @@
   "public bool TwitchBanUser(string userName, string reason, bool bot)": {
     "prefix": "CPH.TwitchBanUser",
     "body": [
-      "CPH.TwitchBanUser(${1:string userName}, ${2:string reason = null}, ${3:bool bot = False});"
+      "CPH.TwitchBanUser(${1:string userName}, ${2:string reason = null}, ${3:bool bot = false});"
     ]
   },
   "public bool TwitchUnbanUser(string userName, bool bot)": {
     "prefix": "CPH.TwitchUnbanUser",
     "body": [
-      "CPH.TwitchUnbanUser(${1:string userName}, ${2:bool bot = False});"
+      "CPH.TwitchUnbanUser(${1:string userName}, ${2:bool bot = false});"
     ]
   },
   "public bool TwitchTimeoutUser(string username, int duration, string reason, bool bot)": {
     "prefix": "CPH.TwitchTimeoutUser",
     "body": [
-      "CPH.TwitchTimeoutUser(${1:string username}, ${2:int duration}, ${3:string reason = null}, ${4:bool bot = False});"
+      "CPH.TwitchTimeoutUser(${1:string username}, ${2:int duration}, ${3:string reason = null}, ${4:bool bot = false});"
     ]
   },
   "public bool TwitchClearChatMessages(bool bot)": {
     "prefix": "CPH.TwitchClearChatMessages",
     "body": [
-      "CPH.TwitchClearChatMessages(${1:bool bot = True});"
+      "CPH.TwitchClearChatMessages(${1:bool bot = true});"
     ]
   },
   "public bool TwitchDeleteChatMessage(string messageId, bool bot)": {
     "prefix": "CPH.TwitchDeleteChatMessage",
     "body": [
-      "CPH.TwitchDeleteChatMessage(${1:string messageId}, ${2:bool bot = True});"
+      "CPH.TwitchDeleteChatMessage(${1:string messageId}, ${2:bool bot = true});"
     ]
   },
   "public bool RunAction(string actionName, bool runImmediately)": {
     "prefix": "CPH.RunAction",
     "body": [
-      "CPH.RunAction(${1:string actionName}, ${2:bool runImmediately = True});"
+      "CPH.RunAction(${1:string actionName}, ${2:bool runImmediately = true});"
     ]
   },
   "public bool RunActionById(string actionId, bool runImmediately)": {
     "prefix": "CPH.RunActionById",
     "body": [
-      "CPH.RunActionById(${1:string actionId}, ${2:bool runImmediately = True});"
+      "CPH.RunActionById(${1:string actionId}, ${2:bool runImmediately = true});"
     ]
   },
   "public void DisableAction(string actionName)": {
